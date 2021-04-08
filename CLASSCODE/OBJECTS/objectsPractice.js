@@ -16,10 +16,10 @@ person.family = ['Blue','Rue','Jones','Green']
 person.pets.push('🐟')
 
 // assigning object properties values to variables
-// const myAge = person.age 
-// const myCity = person.address.city
-// const myZip = person.address.zip
-// const myState = person.address.state
+const myAge = person.age 
+const myCity = person.address.city
+const myZip = person.address.zip
+const myState = person.address.state
 //console.log("My state is "+ myState)
 
 // Destructuring Nested Object Address
@@ -53,7 +53,7 @@ const allKeys = Object.keys(person)
 // console.log(person['firstName'])
 // console.log(person[allKeys[0]])
 
-// assinging the values of the object person to varialble all person.
+// assigning the values of the object person to varialble all person.
 const allValues = Object.values(person);
 //console.log('This is all the value ' + allValues)
 
