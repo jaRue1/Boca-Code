@@ -1,15 +1,25 @@
+// array with objects nested within each index
+const items = [
+  {
+    car: "Lamborghini",
+    color :"Blue",
+    hp: 700,
+  },
+  {
+    car: "Bentley",
+    color :"Red",
+    hp: 500, 
+  },
+  {
+    car: "Mercedes",
+    color :"White",
+    hp: 600,
+  },
+  {
+    car: "Rolls Royce",
+    color :"Black",
+    hp: 400,
+  },
+];
 
-// this is object with a object nested within it.
-//person is a object
-// girlfriend is also an object
-let person = {
-  firstName : 'Rue',
-  age : 27,
-  height : "6'5",
-  hometown :"South Florida",
-  girlfriend :{
-    firstName : "Takeria",
-    age : 22,
-    hometown : "Riviera" 
-  }
-}
+console.log(items[3].car); // Rolls Royce
