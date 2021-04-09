@@ -1,5 +1,5 @@
 //link coffee.json to coffee.js
-const coffees = require('./data/coffee.json')
+const allCoffees = require('./data/allCoffees.json')
 
 //console.log("this is all of my coffee data " + coffees)
 
@@ -9,7 +9,7 @@ const coffees = require('./data/coffee.json')
 // exports...
 exports.getCoffees = function (name) {
   console.log('---------------------COFFEE FUNCTION----------------------------------')
-  coffees.forEach( (recipe) => {
+  allCoffees.forEach( (recipe) => {
     if (recipe.ingredients.includes("Milk")  || 
         recipe.ingredients.includes("Cream") ||
         recipe.ingredients.includes("Steamed Milk") ||
@@ -21,7 +21,15 @@ exports.getCoffees = function (name) {
   })
   console.log('-------------------------------------------------------')
 }
-
+// name this function  and export
+exports.getCoffeesTitles = function(){
+  // filter all coffees which is an array of objects
+ const coffeeTitles =  allCoffees.filter(function(item){
+    // return each coffee titles  
+    return item.id >=15 
+  })
+ console.log(" Coffee Name : " , coffeeTitles)
+}
 
 
 
