@@ -1,10 +1,17 @@
 //link coffee.json to coffee.js
-const allCoffees = require('./data/allCoffees.json')
-
+//const allCoffees = require('./data/allCoffees.json')
 //console.log("this is all of my coffee data " + coffees)
+const fetch = require('node-fetch')
+let allCoffees =[]
+fetch('https://api.sampleapis.com/coffee/hot')
+.then(response => response.json())
+.then( data => {
+  allCoffees = data
+  console.log(data)
 
+})
+.catch(err => console.log('Error Fetching API ', err))
 //exporting function so that i can reference it in index.js
-
 // this function displays only the coffees that have some kinda of milk in their ingredients 
 // exports...
 exports.getCoffees = function (name) {

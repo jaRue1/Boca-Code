@@ -8,6 +8,5 @@ let userName = "Rue"
 // getCoffees(userName)
 // called the function getCoffeesTitles from getCoffee.js
 getCoffeesTitles()
-
 // called the function getAles from beer.js
 // getAles()
