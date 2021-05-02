@@ -20,5 +20,5 @@ function myCar(driver, passenger1, passenger2, passenger3) {
 }
 
 const user1 = "Vicky"
-myCar("Todd", "Gaby", user1, "Michelle")
-console.log(myCar("Todd", "Gaby", user1, "Michelle"))
+let driver = myCar("Todd", "Gaby", user1, "Michelle")
+console.log(driver)
