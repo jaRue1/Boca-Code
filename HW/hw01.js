@@ -9,10 +9,21 @@ function addTo(shoppingList,myCart) {
   })
   return leftOver
 }
-let result = addTo(shoppingList,myCart)
-console.log(result)
+// let result = addTo(shoppingList,myCart)
+// console.log(result)
 //-------------------------------------------------------------------
 // Version 2 --------------------------------------------------------
-const addToCart = shoppingList.filter((data) => {return !myCart.includes(data)})
-console.log(addToCart)
+// let addToCart = shoppingList.filter((data) => {return !myCart.includes(data)})
+// console.log(addToCart)
 //-------------------------------------------------------------------
+function version3(){
+  for (let i = 0; i < shoppingList.length; i++) {
+    const element = shoppingList[i];
+
+    if (myCart.includes(element)) {
+      let x =  shoppingList.slice(i,i +1)    
+        console.log(x)
+    }
+  }
+}
+console.log(version3())
